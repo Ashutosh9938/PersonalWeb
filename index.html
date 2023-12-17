@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueqies.css" />
+  </head>
+  <body>
+    <nav id="C">
+      <div class="logo">Aຮђu†oຮђ</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Aຮђu†oຮђ</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images\profile-pic.png" alt=" profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ashutosh Poudel</h1>
+        <p class="section__text__p2">Software Enginer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="images\linkedin-logo.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="images\github-logo.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images\experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>INTERN</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images\education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> +2 LEVEL <br />BE.Software Engineering(RUNNING)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                
+            </p>
+            I'm Ashutosh Poudel, a Nepal-based software engineer, adept at diverse software development skills.
+            I thrive on challenges, seeking innovative solutions and excelling in various technologies.
+            My commitment to learning ensures impactful solutions. Besides coding, I find inspiration in travel, exploring new cultures,
+            and nature's beauty. Let's collaborate, leveraging my expertise to create meaningful solutions!
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="scrollToExprience()"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="container">
+              <div class="skill-box">
+                <h2 class="experience-sub-title">Programming Skills</h2>
+                <span class="title">HTML & CSS</span>
+                <div class="skill-bar">
+                  <span class="skill-per html">
+                    <span class="tooltip">85%</span>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="skill-box">
+                <span class="title">C</span>
+                
+                <div class="skill-bar">
+                  <span class="skill-per css">
+                    <span class="tooltip">75%</span>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="skill-box">
+                <span class="title">OOP c++</span>
+                
+                <div class="skill-bar">
+                  <span class="skill-per js">
+                    <span class="tooltip">65%</span>
+                  </span>
+                </div>
+              </div>
+              
+              <div class="skill-box">
+                <span class="title"> JavaScript</span>
+                
+                <div class="skill-bar">
+                  <span class="skill-per node-js">
+                    <span class="tooltip">80%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">Python</span>
+                
+                <div class="skill-bar">
+                  <span class="skill-per python">
+                    <span class="tooltip">20%</span>
+                  </span>
+                </div>
+              </div>
+             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Excel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Designing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Marketing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Communication</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Personal GYM Trainer (NTFA)</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Basic Technical Skills</h3>
+                </div>
+              </article>     
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">  
+            </div>
+            <h2 class="experience-sub-title project-title">TrekNopal</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&ifkv=ASKXGp1vZeAbkW-lvN6rmt9S4UpCFfix8u_wSSos3JUABBmKI4hFRYh-GjYEK3V2zf7jHgk-2YiiJA&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1292456566%3A1702806226384430&theme=glif">ashutoshpoudel9938@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images\Free Clipart Images.jpeg"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>+977 9841******</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#C">HOME</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Ashutosh Poudel.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
