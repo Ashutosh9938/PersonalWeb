@@ -340,8 +340,8 @@ section {
 
 
 #experience {
-  padding-top: 10rem; /* Increase top padding to create space */
-  z-index: 1; /* Set a higher z-index to bring it to the front */
+  position: relative;
+  margin-bottom: 6rem;
 }
 
 .experience-sub-title {
@@ -353,18 +353,8 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: space-around; /* Adjust alignment */
-  gap: 2rem; /* Adjust gap between containers */
-  margin-top: 3rem; /* Add some top margin */
-}
-.details-container {
-  flex: 1;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 20px;
-  border: 0.1rem solid rgb(163, 163, 163);
-  text-align: center;
-  max-width: 300px; /* Limit maximum width */
+  justify-content: center;
+  flex-direction: column;
 }
 
 .article-container {
@@ -386,6 +376,7 @@ article {
 article .icon {
   cursor: default;
 }
+
 .container {
   background: #fff;
   position: relative;
@@ -480,9 +471,10 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  margin-top: -8rem; /* Decrease top margin to avoid overlapping */
+  margin-top: -6rem; /* Decrease top margin to avoid overlapping */
   padding-top: 10rem; /* Increase top padding to create space */
-  position: relative; /* Ensure proper positioning */
+  position: relative;
+  margin-bottom: 9rem; ; /* Ensure proper positioning */
 }
 
 .color-container {
@@ -517,6 +509,7 @@ article .icon {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-top: 6rem;
 }
 
 .contact-info-upper-container {
